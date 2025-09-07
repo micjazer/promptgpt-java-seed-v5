@@ -1,0 +1,1 @@
+package com.codeiguanas.promptgpt.providers; public enum ProviderType { ECHO, OPENAI }

@@ -1,0 +1,16 @@
+id: "it/développeur-brief-a"
+language: "fr"
+audience: "Développeur"
+domain: "it"
+role: "Développeur"
+format: "liste"
+tone: "professionnel"
+tags: ["it", "Développeur", "seed"]
+name: "Développeur – Brief opérationnel"
+description: "Génère un brief opérationnel pour Développeur."
+variables:
+  - { name: objectif, type: STRING, required: true, description: "But de la demande" }
+  - { name: audience, type: STRING, required: true, description: "Public cible" }
+  - { name: contexte, type: STRING, required: false, description: "Contexte/contraintes utiles" }
+content: |
+  Explique {{objectif}} pour un public {{audience}}. Détaille étapes, KPI, risques et livrables. Contexte: {{contexte}}

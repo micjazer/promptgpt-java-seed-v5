@@ -1,0 +1,16 @@
+id: "management/chef-de-projet-template-b"
+language: "fr"
+audience: "Chef de projet"
+domain: "management"
+role: "Chef de projet"
+format: "liste"
+tone: "professionnel"
+tags: ["management", "Chef de projet", "seed"]
+name: "Chef de projet – Modèle de demande réutilisable"
+description: "Modèle structuré de demande pour Chef de projet."
+variables:
+  - { name: objectif, type: STRING, required: true, description: "But de la demande" }
+  - { name: audience, type: STRING, required: true, description: "Public cible" }
+  - { name: contexte, type: STRING, required: false, description: "Contexte/contraintes utiles" }
+content: |
+  Rédige un canevas prêt-à-remplir pour {{objectif}} (sections, checklist, critères d'acceptation, dépendances). Public: {{audience}}. Contexte: {{contexte}}

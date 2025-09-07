@@ -1,0 +1,1 @@
+package com.codeiguanas.promptgpt.web.dto; import java.util.Set; public record TemplateSummaryDTO(String id,String name,String description,Set<String> tags) {}

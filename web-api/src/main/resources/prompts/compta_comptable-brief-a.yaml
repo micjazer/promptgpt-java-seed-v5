@@ -1,0 +1,16 @@
+id: "compta/comptable-brief-a"
+language: "fr"
+audience: "Comptable"
+domain: "compta"
+role: "Comptable"
+format: "liste"
+tone: "professionnel"
+tags: ["compta", "Comptable", "seed"]
+name: "Comptable – Brief opérationnel"
+description: "Génère un brief opérationnel pour Comptable."
+variables:
+  - { name: objectif, type: STRING, required: true, description: "But de la demande" }
+  - { name: audience, type: STRING, required: true, description: "Public cible" }
+  - { name: contexte, type: STRING, required: false, description: "Contexte/contraintes utiles" }
+content: |
+  Explique {{objectif}} pour un public {{audience}}. Détaille étapes, KPI, risques et livrables. Contexte: {{contexte}}

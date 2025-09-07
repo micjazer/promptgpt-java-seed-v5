@@ -1,0 +1,16 @@
+id: "droit/avocat-brief-a"
+language: "fr"
+audience: "Avocat"
+domain: "droit"
+role: "Avocat"
+format: "liste"
+tone: "professionnel"
+tags: ["droit", "Avocat", "seed"]
+name: "Avocat – Brief opérationnel"
+description: "Génère un brief opérationnel pour Avocat."
+variables:
+  - { name: objectif, type: STRING, required: true, description: "But de la demande" }
+  - { name: audience, type: STRING, required: true, description: "Public cible" }
+  - { name: contexte, type: STRING, required: false, description: "Contexte/contraintes utiles" }
+content: |
+  Explique {{objectif}} pour un public {{audience}}. Détaille étapes, KPI, risques et livrables. Contexte: {{contexte}}

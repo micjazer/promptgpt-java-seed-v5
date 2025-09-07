@@ -1,0 +1,1 @@
+package com.codeiguanas.promptgpt.providers; public record GenerationResult(String text,int tokensIn,int tokensOut,long latencyMs) { }

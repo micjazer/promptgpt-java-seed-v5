@@ -1,0 +1,16 @@
+id: "education/enseignant-template-b"
+language: "fr"
+audience: "Enseignant"
+domain: "education"
+role: "Enseignant"
+format: "liste"
+tone: "professionnel"
+tags: ["education", "Enseignant", "seed"]
+name: "Enseignant – Modèle de demande réutilisable"
+description: "Modèle structuré de demande pour Enseignant."
+variables:
+  - { name: objectif, type: STRING, required: true, description: "But de la demande" }
+  - { name: audience, type: STRING, required: true, description: "Public cible" }
+  - { name: contexte, type: STRING, required: false, description: "Contexte/contraintes utiles" }
+content: |
+  Rédige un canevas prêt-à-remplir pour {{objectif}} (sections, checklist, critères d'acceptation, dépendances). Public: {{audience}}. Contexte: {{contexte}}

@@ -1,0 +1,16 @@
+id: "btp/architecte-btp-brief-a"
+language: "fr"
+audience: "Architecte BTP"
+domain: "btp"
+role: "Architecte BTP"
+format: "liste"
+tone: "professionnel"
+tags: ["btp", "Architecte BTP", "seed"]
+name: "Architecte BTP – Brief opérationnel"
+description: "Génère un brief opérationnel pour Architecte BTP."
+variables:
+  - { name: objectif, type: STRING, required: true, description: "But de la demande" }
+  - { name: audience, type: STRING, required: true, description: "Public cible" }
+  - { name: contexte, type: STRING, required: false, description: "Contexte/contraintes utiles" }
+content: |
+  Explique {{objectif}} pour un public {{audience}}. Détaille étapes, KPI, risques et livrables. Contexte: {{contexte}}
