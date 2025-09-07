@@ -1,0 +1,16 @@
+id: "supply_chain/responsable-logistique-template-b"
+language: "fr"
+audience: "Responsable logistique"
+domain: "supply_chain"
+role: "Responsable logistique"
+format: "liste"
+tone: "professionnel"
+tags: ["supply_chain", "Responsable logistique", "seed"]
+name: "Responsable logistique – Modèle de demande réutilisable"
+description: "Modèle structuré de demande pour Responsable logistique."
+variables:
+  - { name: objectif, type: STRING, required: true, description: "But de la demande" }
+  - { name: audience, type: STRING, required: true, description: "Public cible" }
+  - { name: contexte, type: STRING, required: false, description: "Contexte/contraintes utiles" }
+content: |
+  Rédige un canevas prêt-à-remplir pour {{objectif}} (sections, checklist, critères d'acceptation, dépendances). Public: {{audience}}. Contexte: {{contexte}}

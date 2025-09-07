@@ -1,0 +1,16 @@
+id: "tourisme/agent-de-voyage-brief-a"
+language: "fr"
+audience: "Agent de voyage"
+domain: "tourisme"
+role: "Agent de voyage"
+format: "liste"
+tone: "professionnel"
+tags: ["tourisme", "Agent de voyage", "seed"]
+name: "Agent de voyage – Brief opérationnel"
+description: "Génère un brief opérationnel pour Agent de voyage."
+variables:
+  - { name: objectif, type: STRING, required: true, description: "But de la demande" }
+  - { name: audience, type: STRING, required: true, description: "Public cible" }
+  - { name: contexte, type: STRING, required: false, description: "Contexte/contraintes utiles" }
+content: |
+  Explique {{objectif}} pour un public {{audience}}. Détaille étapes, KPI, risques et livrables. Contexte: {{contexte}}

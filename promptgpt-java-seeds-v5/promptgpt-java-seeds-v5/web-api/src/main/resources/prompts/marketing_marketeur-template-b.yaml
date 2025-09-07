@@ -1,0 +1,16 @@
+id: "marketing/marketeur-template-b"
+language: "fr"
+audience: "Marketeur"
+domain: "marketing"
+role: "Marketeur"
+format: "liste"
+tone: "professionnel"
+tags: ["marketing", "Marketeur", "seed"]
+name: "Marketeur – Modèle de demande réutilisable"
+description: "Modèle structuré de demande pour Marketeur."
+variables:
+  - { name: objectif, type: STRING, required: true, description: "But de la demande" }
+  - { name: audience, type: STRING, required: true, description: "Public cible" }
+  - { name: contexte, type: STRING, required: false, description: "Contexte/contraintes utiles" }
+content: |
+  Rédige un canevas prêt-à-remplir pour {{objectif}} (sections, checklist, critères d'acceptation, dépendances). Public: {{audience}}. Contexte: {{contexte}}

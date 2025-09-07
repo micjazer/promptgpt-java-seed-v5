@@ -1,0 +1,16 @@
+id: "marketing/marketeur-brief-a"
+language: "fr"
+audience: "Marketeur"
+domain: "marketing"
+role: "Marketeur"
+format: "liste"
+tone: "professionnel"
+tags: ["marketing", "Marketeur", "seed"]
+name: "Marketeur – Brief opérationnel"
+description: "Génère un brief opérationnel pour Marketeur."
+variables:
+  - { name: objectif, type: STRING, required: true, description: "But de la demande" }
+  - { name: audience, type: STRING, required: true, description: "Public cible" }
+  - { name: contexte, type: STRING, required: false, description: "Contexte/contraintes utiles" }
+content: |
+  Explique {{objectif}} pour un public {{audience}}. Détaille étapes, KPI, risques et livrables. Contexte: {{contexte}}

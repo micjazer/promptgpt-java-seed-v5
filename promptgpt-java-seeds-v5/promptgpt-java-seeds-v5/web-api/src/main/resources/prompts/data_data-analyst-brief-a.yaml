@@ -1,0 +1,16 @@
+id: "data/data-analyst-brief-a"
+language: "fr"
+audience: "Data analyst"
+domain: "data"
+role: "Data analyst"
+format: "liste"
+tone: "professionnel"
+tags: ["data", "Data analyst", "seed"]
+name: "Data analyst – Brief opérationnel"
+description: "Génère un brief opérationnel pour Data analyst."
+variables:
+  - { name: objectif, type: STRING, required: true, description: "But de la demande" }
+  - { name: audience, type: STRING, required: true, description: "Public cible" }
+  - { name: contexte, type: STRING, required: false, description: "Contexte/contraintes utiles" }
+content: |
+  Explique {{objectif}} pour un public {{audience}}. Détaille étapes, KPI, risques et livrables. Contexte: {{contexte}}

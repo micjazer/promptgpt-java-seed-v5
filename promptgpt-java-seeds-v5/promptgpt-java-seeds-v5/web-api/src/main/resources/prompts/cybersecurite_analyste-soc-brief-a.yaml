@@ -1,0 +1,16 @@
+id: "cybersecurite/analyste-soc-brief-a"
+language: "fr"
+audience: "Analyste SOC"
+domain: "cybersecurite"
+role: "Analyste SOC"
+format: "liste"
+tone: "professionnel"
+tags: ["cybersecurite", "Analyste SOC", "seed"]
+name: "Analyste SOC – Brief opérationnel"
+description: "Génère un brief opérationnel pour Analyste SOC."
+variables:
+  - { name: objectif, type: STRING, required: true, description: "But de la demande" }
+  - { name: audience, type: STRING, required: true, description: "Public cible" }
+  - { name: contexte, type: STRING, required: false, description: "Contexte/contraintes utiles" }
+content: |
+  Explique {{objectif}} pour un public {{audience}}. Détaille étapes, KPI, risques et livrables. Contexte: {{contexte}}

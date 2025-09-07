@@ -1,0 +1,16 @@
+id: "assurance/gestionnaire-sinistres-template-b"
+language: "fr"
+audience: "Gestionnaire sinistres"
+domain: "assurance"
+role: "Gestionnaire sinistres"
+format: "liste"
+tone: "professionnel"
+tags: ["assurance", "Gestionnaire sinistres", "seed"]
+name: "Gestionnaire sinistres – Modèle de demande réutilisable"
+description: "Modèle structuré de demande pour Gestionnaire sinistres."
+variables:
+  - { name: objectif, type: STRING, required: true, description: "But de la demande" }
+  - { name: audience, type: STRING, required: true, description: "Public cible" }
+  - { name: contexte, type: STRING, required: false, description: "Contexte/contraintes utiles" }
+content: |
+  Rédige un canevas prêt-à-remplir pour {{objectif}} (sections, checklist, critères d'acceptation, dépendances). Public: {{audience}}. Contexte: {{contexte}}
